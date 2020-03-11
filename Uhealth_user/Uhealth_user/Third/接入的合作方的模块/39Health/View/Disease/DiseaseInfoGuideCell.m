@@ -1,0 +1,30 @@
+//
+//  DiseaseInfoGuideCell.m
+//  YYK
+//
+//  Created by xiexianyu on 12/14/16.
+//  Copyright © 2016 39.net. All rights reserved.
+//
+
+#import "DiseaseInfoGuideCell.h"
+
+@implementation DiseaseInfoGuideCell
+
+//- (void)awakeFromNib {
+//    [super awakeFromNib];
+//    // Initialization code
+//}
+//
+//- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+//    [super setSelected:selected animated:animated];
+//
+//    // Configure the view for the selected state
+//}
+
+// custom cell, override it in iOS8 and later
+- (UIEdgeInsets)layoutMargins
+{
+    return UIEdgeInsetsZero;
+}
+
+@end

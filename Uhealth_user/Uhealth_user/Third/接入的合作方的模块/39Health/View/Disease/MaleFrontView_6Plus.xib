@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="UA3-0b-9D0" customClass="MaleFrontView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="male_front_6plus" translatesAutoresizingMaskIntoConstraints="NO" id="bbB-K0-YW4">
+                    <rect key="frame" x="169" y="62" width="263" height="476"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="male_front_arm_6plus" translatesAutoresizingMaskIntoConstraints="NO" id="gEQ-cv-BrQ">
+                    <rect key="frame" x="169" y="142" width="263" height="165"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="male_front_leg_6plus" translatesAutoresizingMaskIntoConstraints="NO" id="wyu-sl-0Gl">
+                    <rect key="frame" x="228" y="258" width="146" height="279"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="male_front_chest_6plus" translatesAutoresizingMaskIntoConstraints="NO" id="efI-5Y-9A9">
+                    <rect key="frame" x="259" y="140" width="83" height="72"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="male_front_belly_6plus" translatesAutoresizingMaskIntoConstraints="NO" id="bNg-Ch-sR4">
+                    <rect key="frame" x="265" y="204" width="73" height="56"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="male_front_basin_6plus" translatesAutoresizingMaskIntoConstraints="NO" id="owz-1h-4ka">
+                    <rect key="frame" x="261" y="245" width="80" height="45"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="male_front_head_6plus" translatesAutoresizingMaskIntoConstraints="NO" id="JxB-nR-Yja">
+                    <rect key="frame" x="276" y="63" width="51" height="81"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="wyu-sl-0Gl" firstAttribute="centerX" secondItem="owz-1h-4ka" secondAttribute="centerX" id="2U7-YD-LNi"/>
+                <constraint firstItem="gEQ-cv-BrQ" firstAttribute="top" secondItem="efI-5Y-9A9" secondAttribute="bottom" constant="-70" id="4vO-ga-eaK"/>
+                <constraint firstItem="owz-1h-4ka" firstAttribute="top" secondItem="bNg-Ch-sR4" secondAttribute="bottom" constant="-15" id="7bZ-C8-hQF"/>
+                <constraint firstAttribute="centerY" secondItem="bbB-K0-YW4" secondAttribute="centerY" id="APZ-MQ-LJg"/>
+                <constraint firstItem="efI-5Y-9A9" firstAttribute="top" secondItem="JxB-nR-Yja" secondAttribute="bottom" constant="-4" id="BjN-V6-HjS"/>
+                <constraint firstItem="wyu-sl-0Gl" firstAttribute="top" secondItem="owz-1h-4ka" secondAttribute="bottom" constant="-32" id="EfD-2B-ECD"/>
+                <constraint firstItem="JxB-nR-Yja" firstAttribute="centerX" secondItem="efI-5Y-9A9" secondAttribute="centerX" constant="1" id="HVk-F7-M8A"/>
+                <constraint firstAttribute="centerX" secondItem="bbB-K0-YW4" secondAttribute="centerX" id="Ny6-HJ-dmx"/>
+                <constraint firstAttribute="centerX" secondItem="efI-5Y-9A9" secondAttribute="centerX" id="XBE-aN-Lzr"/>
+                <constraint firstItem="bNg-Ch-sR4" firstAttribute="top" secondItem="efI-5Y-9A9" secondAttribute="bottom" constant="-8" id="kxl-ko-MyS"/>
+                <constraint firstAttribute="centerY" secondItem="efI-5Y-9A9" secondAttribute="centerY" constant="124" id="nP7-DJ-z5H"/>
+                <constraint firstItem="gEQ-cv-BrQ" firstAttribute="centerX" secondItem="efI-5Y-9A9" secondAttribute="centerX" id="rH7-IN-via"/>
+                <constraint firstItem="owz-1h-4ka" firstAttribute="centerX" secondItem="bNg-Ch-sR4" secondAttribute="centerX" constant="-0.5" id="rmi-oD-d6S"/>
+                <constraint firstItem="efI-5Y-9A9" firstAttribute="centerX" secondItem="bNg-Ch-sR4" secondAttribute="centerX" constant="-1" id="uqc-NX-qkp"/>
+            </constraints>
+            <connections>
+                <outlet property="maleFrontAll" destination="bbB-K0-YW4" id="8Lk-dj-1GL"/>
+                <outlet property="maleFrontArm" destination="gEQ-cv-BrQ" id="qxG-kg-u5d"/>
+                <outlet property="maleFrontBasin" destination="owz-1h-4ka" id="KRI-O6-YBx"/>
+                <outlet property="maleFrontBelly" destination="bNg-Ch-sR4" id="K1A-5m-QyT"/>
+                <outlet property="maleFrontChest" destination="efI-5Y-9A9" id="Jly-bp-RZX"/>
+                <outlet property="maleFrontHead" destination="JxB-nR-Yja" id="jzf-pG-zOS"/>
+                <outlet property="maleFrontLeg" destination="wyu-sl-0Gl" id="wnT-te-GkF"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="male_front_6plus" width="263" height="476"/>
+        <image name="male_front_arm_6plus" width="263" height="165"/>
+        <image name="male_front_basin_6plus" width="80" height="45"/>
+        <image name="male_front_belly_6plus" width="73" height="56"/>
+        <image name="male_front_chest_6plus" width="83" height="72"/>
+        <image name="male_front_head_6plus" width="51" height="81"/>
+        <image name="male_front_leg_6plus" width="146" height="279"/>
+    </resources>
+</document>

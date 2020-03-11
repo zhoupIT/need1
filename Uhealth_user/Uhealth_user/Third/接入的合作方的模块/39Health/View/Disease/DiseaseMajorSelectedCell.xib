@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="DiseaseMajorSelectedCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_triangle" translatesAutoresizingMaskIntoConstraints="NO" id="4ce-Hh-5xV">
+                        <rect key="frame" x="16" y="14" width="5" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="IOw-BU-AWE"/>
+                            <constraint firstAttribute="width" constant="5" id="bQp-bQ-Ne2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已选的症状: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="83n-Bf-vv0">
+                        <rect key="frame" x="23" y="10" width="83.5" height="17.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="头晕" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quk-9p-tvm">
+                        <rect key="frame" x="108.5" y="10" width="30" height="18"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" red="0.1176470588" green="0.61960784310000006" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否同时还伴有以下的某些症状?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="219" translatesAutoresizingMaskIntoConstraints="NO" id="qCd-8M-auN">
+                        <rect key="frame" x="16" y="40" width="222" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4zB-ce-9nJ">
+                        <rect key="frame" x="0.0" y="74" width="320" height="26"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="w9o-PH-BMg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qCd-8M-auN" firstAttribute="top" secondItem="quk-9p-tvm" secondAttribute="bottom" constant="12" id="2p4-yf-fTK"/>
+                    <constraint firstItem="4ce-Hh-5xV" firstAttribute="centerY" secondItem="83n-Bf-vv0" secondAttribute="centerY" id="3Tb-Ur-dBm"/>
+                    <constraint firstAttribute="bottom" secondItem="4zB-ce-9nJ" secondAttribute="bottom" id="6GI-75-hee"/>
+                    <constraint firstItem="83n-Bf-vv0" firstAttribute="leading" secondItem="4ce-Hh-5xV" secondAttribute="trailing" constant="2" id="IJe-62-Xac"/>
+                    <constraint firstItem="4ce-Hh-5xV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="J3G-tn-khR"/>
+                    <constraint firstItem="83n-Bf-vv0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="OO6-Mt-qRc"/>
+                    <constraint firstItem="qCd-8M-auN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="SEV-sy-51b"/>
+                    <constraint firstItem="4zB-ce-9nJ" firstAttribute="top" secondItem="qCd-8M-auN" secondAttribute="bottom" constant="16" id="W85-l1-K2X"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="quk-9p-tvm" secondAttribute="trailing" constant="16" id="aMK-Vs-UJl"/>
+                    <constraint firstItem="quk-9p-tvm" firstAttribute="centerY" secondItem="83n-Bf-vv0" secondAttribute="centerY" id="ilL-Ty-JcE"/>
+                    <constraint firstItem="quk-9p-tvm" firstAttribute="leading" secondItem="83n-Bf-vv0" secondAttribute="trailing" constant="2" id="soG-rm-rL6"/>
+                    <constraint firstAttribute="trailing" secondItem="4zB-ce-9nJ" secondAttribute="trailing" id="uN7-sW-RDt"/>
+                    <constraint firstItem="4zB-ce-9nJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="z4q-JB-9Rp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="majorLabel" destination="quk-9p-tvm" id="EpO-Qh-UkL"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="common_triangle" width="5" height="9"/>
+    </resources>
+</document>

@@ -1,0 +1,25 @@
+platform :ios, ‘9.0’
+target ‘Uhealth_user’ do
+use_frameworks!
+
+pod 'MBProgressHUD',:inhibit_warnings => true
+pod 'MJExtension',:inhibit_warnings => true
+pod 'AFNetworking',:inhibit_warnings => true
+pod 'SDWebImage',:inhibit_warnings => true
+pod 'SDAutoLayout',:inhibit_warnings => true
+pod 'UMCCommon',:inhibit_warnings => true
+pod 'UMCSecurityPlugins',:inhibit_warnings => true
+# U-Share SDK UI模块（分享面板，建议添加）
+pod 'UMCShare/UI',:inhibit_warnings => true
+# 集成微信(精简版0.2M)
+pod 'UMCShare/Social/ReducedWeChat',:inhibit_warnings => true
+# 集成QQ/QZone/TIM(精简版0.5M)
+pod 'UMCShare/Social/ReducedQQ',:inhibit_warnings => true
+# 集成新浪微博(精简版1M)
+pod 'UMCShare/Social/ReducedSina',:inhibit_warnings => true
+# 集成钉钉
+pod 'UMCShare/Social/DingDing',:inhibit_warnings => true
+pod 'SVProgressHUD',:inhibit_warnings => true 
+pod 'Charts',:inhibit_warnings => true
+pod 'iOS-Echarts',:inhibit_warnings => true
+end

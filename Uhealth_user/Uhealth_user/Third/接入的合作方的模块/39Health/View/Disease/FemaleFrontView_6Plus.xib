@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FemaleFrontView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="female_front_6plus" translatesAutoresizingMaskIntoConstraints="NO" id="W7r-8c-WMP">
+                    <rect key="frame" x="91" y="130" width="232" height="476"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="female_front_arm_6plus" translatesAutoresizingMaskIntoConstraints="NO" id="hnB-Hp-vCt">
+                    <rect key="frame" x="91" y="210" width="232" height="163"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="female_front_leg_6plus" translatesAutoresizingMaskIntoConstraints="NO" id="ExV-JQ-fIt">
+                    <rect key="frame" x="149" y="332" width="116" height="272"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="female_front_chest_6plus" translatesAutoresizingMaskIntoConstraints="NO" id="naX-oX-9MP">
+                    <rect key="frame" x="173" y="203" width="68" height="65"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="female_front_belly_6plus" translatesAutoresizingMaskIntoConstraints="NO" id="ya5-5g-XWp">
+                    <rect key="frame" x="171" y="260" width="71" height="66"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="female_front_head_6plus" translatesAutoresizingMaskIntoConstraints="NO" id="dVD-s7-Cif">
+                    <rect key="frame" x="185" y="132" width="44" height="74"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="female_front_basin_6plus" translatesAutoresizingMaskIntoConstraints="NO" id="04a-cd-5eV">
+                    <rect key="frame" x="166" y="315" width="81" height="41"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ya5-5g-XWp" firstAttribute="top" secondItem="naX-oX-9MP" secondAttribute="bottom" constant="-8" id="1hS-f5-nZF"/>
+                <constraint firstAttribute="centerY" secondItem="W7r-8c-WMP" secondAttribute="centerY" id="1z4-Kj-INs"/>
+                <constraint firstAttribute="centerX" secondItem="naX-oX-9MP" secondAttribute="centerX" id="3O2-RU-Ctg"/>
+                <constraint firstItem="04a-cd-5eV" firstAttribute="top" secondItem="ya5-5g-XWp" secondAttribute="bottom" constant="-11" id="C6L-gd-ypW"/>
+                <constraint firstAttribute="centerY" secondItem="naX-oX-9MP" secondAttribute="centerY" constant="132.5" id="F0g-r4-Hhg"/>
+                <constraint firstAttribute="centerX" secondItem="W7r-8c-WMP" secondAttribute="centerX" id="JjB-S9-yGh"/>
+                <constraint firstItem="hnB-Hp-vCt" firstAttribute="top" secondItem="naX-oX-9MP" secondAttribute="bottom" constant="-58" id="RYN-78-FR2"/>
+                <constraint firstItem="naX-oX-9MP" firstAttribute="centerX" secondItem="hnB-Hp-vCt" secondAttribute="centerX" id="TjJ-E6-8yw"/>
+                <constraint firstItem="ya5-5g-XWp" firstAttribute="centerX" secondItem="naX-oX-9MP" secondAttribute="centerX" constant="-0.5" id="ZOp-dt-nhi"/>
+                <constraint firstItem="ExV-JQ-fIt" firstAttribute="top" secondItem="04a-cd-5eV" secondAttribute="bottom" constant="-24" id="dlK-Yf-lWW"/>
+                <constraint firstItem="naX-oX-9MP" firstAttribute="centerX" secondItem="dVD-s7-Cif" secondAttribute="centerX" id="hcF-E4-Oa3"/>
+                <constraint firstItem="naX-oX-9MP" firstAttribute="top" secondItem="dVD-s7-Cif" secondAttribute="bottom" constant="-3" id="ky5-j5-fky"/>
+                <constraint firstItem="04a-cd-5eV" firstAttribute="centerX" secondItem="ExV-JQ-fIt" secondAttribute="centerX" constant="-0.5" id="sN4-2C-pYH"/>
+                <constraint firstItem="ya5-5g-XWp" firstAttribute="centerX" secondItem="04a-cd-5eV" secondAttribute="centerX" id="vSA-Xx-bkf"/>
+            </constraints>
+            <connections>
+                <outlet property="arm" destination="hnB-Hp-vCt" id="btm-u3-Tea"/>
+                <outlet property="basin" destination="04a-cd-5eV" id="uGT-DX-n0U"/>
+                <outlet property="belly" destination="ya5-5g-XWp" id="Ak4-QA-HYd"/>
+                <outlet property="chest" destination="naX-oX-9MP" id="WaP-z9-Tmt"/>
+                <outlet property="entire" destination="W7r-8c-WMP" id="8WG-M5-DFw"/>
+                <outlet property="head" destination="dVD-s7-Cif" id="81z-QX-Yfr"/>
+                <outlet property="leg" destination="ExV-JQ-fIt" id="Do7-wP-VHp"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="female_front_6plus" width="232" height="476"/>
+        <image name="female_front_arm_6plus" width="232" height="163"/>
+        <image name="female_front_basin_6plus" width="81" height="41"/>
+        <image name="female_front_belly_6plus" width="71" height="66"/>
+        <image name="female_front_chest_6plus" width="68" height="65"/>
+        <image name="female_front_head_6plus" width="44" height="74"/>
+        <image name="female_front_leg_6plus" width="116" height="272"/>
+    </resources>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MaleBackView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="male_back_iPad" translatesAutoresizingMaskIntoConstraints="NO" id="qaY-tY-lzK">
+                    <rect key="frame" x="93" y="-58" width="414" height="716"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="male_back_arm_iPad" translatesAutoresizingMaskIntoConstraints="NO" id="mPl-77-qIb">
+                    <rect key="frame" x="93" y="48" width="414" height="257"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="male_back_back_iPad" translatesAutoresizingMaskIntoConstraints="NO" id="PPB-mu-wXU">
+                    <rect key="frame" x="233" y="48" width="132" height="177"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="male_back_butt_iPad" translatesAutoresizingMaskIntoConstraints="NO" id="a7S-KK-WgN">
+                    <rect key="frame" x="236" y="197" width="128" height="86"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="male_back_head_iPad" translatesAutoresizingMaskIntoConstraints="NO" id="BdJ-3t-NEl">
+                    <rect key="frame" x="267" y="-57" width="67" height="93"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="male_back_neck_iPad" translatesAutoresizingMaskIntoConstraints="NO" id="jq8-0b-MaG">
+                    <rect key="frame" x="232" y="24" width="135" height="44"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="male_back_leg_iPad" translatesAutoresizingMaskIntoConstraints="NO" id="yeb-xa-mcU">
+                    <rect key="frame" x="129" y="265" width="341" height="392"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="qaY-tY-lzK" secondAttribute="centerX" id="8fL-I9-Feb"/>
+                <constraint firstItem="jq8-0b-MaG" firstAttribute="centerX" secondItem="PPB-mu-wXU" secondAttribute="centerX" constant="0.5" id="F4e-Wv-6ED"/>
+                <constraint firstItem="mPl-77-qIb" firstAttribute="centerX" secondItem="PPB-mu-wXU" secondAttribute="centerX" constant="1" id="JDb-od-qHR"/>
+                <constraint firstItem="PPB-mu-wXU" firstAttribute="top" secondItem="jq8-0b-MaG" secondAttribute="bottom" constant="-20" id="N3E-hc-9KE"/>
+                <constraint firstAttribute="centerX" secondItem="PPB-mu-wXU" secondAttribute="centerX" constant="1" id="R5R-E1-vij"/>
+                <constraint firstAttribute="centerY" secondItem="PPB-mu-wXU" secondAttribute="centerY" constant="163.5" id="TbU-ZN-z3l"/>
+                <constraint firstItem="jq8-0b-MaG" firstAttribute="top" secondItem="BdJ-3t-NEl" secondAttribute="bottom" constant="-12" id="fEb-Q8-4d9"/>
+                <constraint firstItem="a7S-KK-WgN" firstAttribute="centerX" secondItem="yeb-xa-mcU" secondAttribute="centerX" constant="0.5" id="l6l-CI-vj1"/>
+                <constraint firstItem="jq8-0b-MaG" firstAttribute="centerX" secondItem="BdJ-3t-NEl" secondAttribute="centerX" constant="-1" id="lEK-hR-7rf"/>
+                <constraint firstAttribute="centerY" secondItem="qaY-tY-lzK" secondAttribute="centerY" id="m7g-WA-mVd"/>
+                <constraint firstItem="mPl-77-qIb" firstAttribute="top" secondItem="PPB-mu-wXU" secondAttribute="bottom" constant="-177" id="mw2-9l-jpZ"/>
+                <constraint firstItem="a7S-KK-WgN" firstAttribute="top" secondItem="PPB-mu-wXU" secondAttribute="bottom" constant="-28" id="nVh-rl-CtV"/>
+                <constraint firstItem="a7S-KK-WgN" firstAttribute="centerX" secondItem="PPB-mu-wXU" secondAttribute="centerX" constant="1" id="oAf-HD-Wxu"/>
+                <constraint firstItem="yeb-xa-mcU" firstAttribute="top" secondItem="a7S-KK-WgN" secondAttribute="bottom" constant="-18" id="pWn-hc-p1z"/>
+            </constraints>
+            <connections>
+                <outlet property="arm" destination="mPl-77-qIb" id="N1U-DP-XMr"/>
+                <outlet property="back" destination="PPB-mu-wXU" id="qva-fl-TSy"/>
+                <outlet property="butt" destination="a7S-KK-WgN" id="Vf8-qZ-fdc"/>
+                <outlet property="head" destination="BdJ-3t-NEl" id="rPl-pQ-F4v"/>
+                <outlet property="leg" destination="yeb-xa-mcU" id="DSG-mF-5PT"/>
+                <outlet property="maleBackAll" destination="qaY-tY-lzK" id="bDK-h5-pxI"/>
+                <outlet property="neck" destination="jq8-0b-MaG" id="M0p-7D-c4J"/>
+            </connections>
+            <point key="canvasLocation" x="386" y="365"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="male_back_arm_iPad" width="414" height="257"/>
+        <image name="male_back_back_iPad" width="132" height="177"/>
+        <image name="male_back_butt_iPad" width="128" height="86"/>
+        <image name="male_back_head_iPad" width="67" height="93"/>
+        <image name="male_back_iPad" width="414" height="715"/>
+        <image name="male_back_leg_iPad" width="341" height="392"/>
+        <image name="male_back_neck_iPad" width="135" height="44"/>
+    </resources>
+</document>
